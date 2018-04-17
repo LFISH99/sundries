@@ -1,0 +1,120 @@
+input::-webkit-input-placeholder{
+  color: #ccc !important;
+}
+.wm-input-wrapper .el-autocomplete{
+  display: block;
+}
+.wm-input-wrapper .el-input__inner{
+  border-color: #EAEAEA;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  height: auto;
+  line-height: inherit;
+  padding: 7px 70px 7px 0;
+}
+.wm-input-wrapper .el-input__inner:hover,
+.wm-input-wrapper .el-input__inner:focus{
+  border-color: #08AFB9;
+}
+
+.wm-input-wrapper .sub-input{
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right:0;
+  border-left: 1px #EAEAEA solid;
+  padding-left: 10px;
+  margin: 7px 0;
+  cursor: pointer;
+}
+.wm-input-wrapper .el-input__icon{
+  line-height: 1;
+  height: auto;
+  width: auto;
+  padding: 7px 10px;
+  color: #dddee1;
+  right: 70px;
+}
+
+.wm-input-wrapper.sty1 .el-input{
+  margin-right: 40px;
+}
+.wm-input-wrapper.sty1 .el-input__inner {
+  padding: 7px 0;
+
+}
+
+/**
+下拉
+======================== */
+
+.el-autocomplete-suggestion{
+  /*margin: 0;*/
+  /*box-shadow: 0 1px 10px 0 rgba(204,204,204,.35);*/
+  /*padding: 10px 20px 40px 20px;*/
+  /*border: 1px #eaeaea solid;*/
+  /*border-radius: 3px;*/
+  /*box-sizing: content-box;*/
+  /*background: #fff;*/
+  /*text-align: left;*/
+  overflow: -webkit-paged-x;
+  margin: 0;
+}
+.el-autocomplete-suggestion .el-scrollbar{
+  box-shadow: 0 1px 10px 0 rgba(204,204,204,.35);
+  /*padding: 0 20px 40px 20px;*/
+  padding-right: 17px ;
+  border: 1px #eaeaea solid;
+  border-radius: 3px;
+  box-sizing: content-box;
+  background: #fff;
+  text-align: left;
+  overflow: initial;
+}
+.el-autocomplete-suggestion .el-autocomplete-suggestion__wrap{
+  border: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0;
+}
+.el-autocomplete-suggestion__list{
+  padding-top: 5px;
+}
+.wm-list-wm li,
+.el-autocomplete-suggestion__list li{
+  background: #fff;
+  border: none;
+  /*padding: 10px 10px 0 10px;*/
+  padding: 5px 0 5px 10px;
+  font-size: 1.4rem;
+  line-height: 1;
+
+}
+.el-autocomplete-suggestion__list li .item-highlight:before,
+.wm-list-wm li .item-highlight:before{
+  color: #AFAFAF;
+  font-size: 2.5rem;
+  vertical-align: middle;
+  padding-right: 10px;
+  content: "\F455";
+  font-family: Ionicons;
+}
+
+.el-autocomplete-suggestion li .item-highlight{
+  color: #333;
+
+}
+.el-autocomplete-suggestion li .item-remark,
+.wm-list-wm li .item-remark{
+  color: #999;
+  padding-left: 12px;
+}
+.el-scrollbar__bar{
+  display: none;
+}
+
+
+
+

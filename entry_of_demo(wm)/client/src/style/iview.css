@@ -1,0 +1,262 @@
+.ivu-input{
+  border-radius: 2px;
+}
+/*.ivu-input:hover {*/
+  /*border-color: #08afb9;*/
+/*}*/
+/*.ivu-input:focus{*/
+  /*border-color: #08afb9;*/
+  /*box-shadow: none;*/
+/*}*/
+
+
+.box-input-sty1{
+  box-shadow: 0 1px 1px 1px rgba(204,204,204,.2);
+  border: 1px #F2F2F2 solid;
+  /*width: 490px;*/
+  padding: 10px 0 0 31px;
+}
+.box-input-sty1 .ivu-input-wrapper{
+  position: relative;
+}
+.box-input-sty1 .ivu-input{
+  border: none;
+  border-radius: 0;
+  font-size: 1.4rem;
+  /*color: #EAEAEA;*/
+  line-height: 20px;
+  /*margin: 5px 0;*/
+  padding: 0;
+
+  padding: 5px 67px 5px 0;
+  border-bottom: 1px #EAEAEA solid;
+}
+
+
+.box-input-sty1 .ivu-input:focus {
+  border-bottom: 1px #08AFB9 solid;
+  outline: 0;
+  box-shadow: none;
+}
+
+.box-input-sty1 .sub-box{
+  /*margin: 11px 10px 0 31px;*/
+  /*border-bottom: 1px #EAEAEA solid;*/
+  padding: 1px 0 1px 1px;
+  /*width: 448px;*/
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.box-input-sty1 .sub-box .button{
+  border-left: 1px #EAEAEA solid;
+  padding: 0 10px;
+  /*margin: 7px 0;*/
+  /*flex-shrink: 0;*/
+  color: #666666;
+  font-size: 1.4rem;
+  position: absolute;
+  right: 0;
+}
+
+
+.box-input-sty2 .ivu-input-wrapper + .ivu-input-wrapper{
+  padding: 0;
+  margin-left: 40px;
+  /*flex-shrink: 0;*/
+}
+.box-input-sty2 .ivu-input{
+  /*margin-right: 40px;*/
+  /*flex-shrink: 0;*/
+  padding: 0;
+}
+
+
+/**
+commom
+============================== */
+.ivu-input{
+  font-size: 1.4rem;
+  line-height: 1em;
+  /*height: auto;*/
+}
+.ivu-input:hover,
+.ivu-input:focus,
+.ivu-select-selection:hover{
+  border-color: #08afb9;
+  box-shadow: none;
+}
+
+/**
+Tabs 标签页
+============================== */
+.ivu-tabs{
+  overflow: inherit;
+}
+.ivu-tabs-bar {
+  padding: 0 14px;
+  border-bottom: 1px solid #0AB1BC;
+  margin: 0;
+}
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-nav-container{
+  height: auto;
+}
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab{
+  border-color: #ccc;
+  background: #FBFBFB;
+  margin-right: 20px;
+  font-size: 2rem;
+  color: #666;
+  height: auto;
+  border-radius: 2px 2px 0 0;
+}
+.ivu-tabs.ivu-tabs-card > .ivu-tabs-bar .ivu-tabs-tab-active{
+  border-color: #0AB1BC;
+  background: #fff;
+  color: #08afb9;
+}
+
+/**
+INPUT、AUTO COMPLETE
+================================ */
+.wm-input{
+  /*position: relative;*/
+  font-size: 1.4rem;
+}
+.wm-input-wrapper{
+  position: relative;
+}
+.wm-input-wrapper.sty1 .ivu-input,
+.wm-input-wrapper.sty1 .ivu-select-input{
+  border-width: 0 0 1px 0;
+  padding: 5px 67px 5px 0;
+  font-size: 1.4rem;
+  border-radius: 0;
+  height: auto;
+}
+
+.wm-input-wrapper.sty1 .ivu-auto-complete .ivu-icon-ios-close{
+  right: 67px;
+  cursor: pointer;
+}
+
+.wm-input-wrapper.sty1 .ivu-select-dropdown{
+  margin: 0;
+  padding: 0;
+  max-height: 317px;
+  border-radius: 0;
+  overflow-y: auto;
+  overflow-x: inherit;
+  box-shadow: 0 1px 10px 0 rgba(204,204,204,.35);
+}
+.wm-input-wrapper.sty1 .ivu-select-item{
+  white-space:inherit;
+}
+.wm-input-wrapper.sty1 .ivu-select-selection{
+  border-width: 0 0 1px 0;
+  padding: 0;
+  border-radius: 0;
+  box-sizing: content-box;
+}
+.wm-input-wrapper.sty1 .ivu-select-visible .ivu-select-selection{
+  border-color: #08afb9;
+  outline: 0;
+  box-shadow: none;
+}
+.ivu-select-not-found{
+  display: none;
+}
+
+
+
+
+[class^="icon-"]{
+  font-family: Ionicons;
+}
+
+/**
+自定义ICON
+========================= */
+[class*="ivu-icon-mv-"]{
+  font-size: 20px;
+  box-sizing: content-box;
+  line-height: 1em;
+}
+.ivu-icon-mv-search{
+  width: 1em;
+  height: 1em;
+
+}
+.ivu-icon-mv-search:before{
+  content: '';
+  display: block;
+  /*border: .2em #eaeaea solid;*/
+  border: .1em #eaeaea solid;
+  /*width: 1.2em;*/
+  width: .6em;
+  /*height: 1.2em;*/
+  height: .6em;
+  border-radius: 50%;
+  box-sizing: content-box;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.ivu-icon-mv-search:after{
+  content: '';
+  display: block;
+  background: #EAEAEA;
+  /*height: .2em;*/
+  height: .1em;
+  /*width: .8em;*/
+  width: .4em;
+  transform: rotate(135deg);
+
+  border-radius: 2em;
+  box-sizing: content-box;
+  position: absolute;
+  right: .55em;
+  top: .75em;
+}
+
+
+/*
+特殊场景修改图标
+==================== */
+.wm-input-wrapper .ivu-icon-ios-close{
+  line-height: 1;
+  height: auto;
+  width: auto;
+  padding: 5px 10px;
+  color: #dddee1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
