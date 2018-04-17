@@ -1,0 +1,30 @@
+
+.my-autocomplete {
+  li {
+    .value {
+      font-size: 18px;
+  }
+    .addr {
+      color: gray !important;
+      font-size: 12px !important;
+  }
+}
+}
+
+.log-page {
+  display: flex;
+
+  .el-autocomplete, .el-dropdown {
+    width: 100% !important;
+}
+
+  .left {
+    padding: 10px;
+    flex: 3;
+}
+  /* 地图容器必须设置宽和高属性 */
+  .map {
+    flex: 2;
+    height: 400px;
+}
+}
